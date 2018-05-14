@@ -1,0 +1,21 @@
+[
+  {"block_size":"512","label":"","model":"CD-ROM","name":"\/dev\/sr0","parent":"","size":"2097151","type":"","uuid":"","vendor":"VBOX"},
+  {"block_size":"512","label":"","model":"External USB 3.0","name":"\/dev\/sdb","parent":"","size":"1953525164","type":"","uuid":"","vendor":"TOSHIBA"},
+  {"block_size":"","label":"TOSHIBA EXT","model":"External USB 3.0","name":"\/dev\/sdb1","parent":"\/dev\/sdb","size":"1953521068","type":"ntfs","uuid":"F086EAE086EAA676","vendor":"TOSHIBA"},
+  {"block_size":"512","label":"","model":"Ultra","name":"\/dev\/sdc","parent":"","size":"60063744","type":"","uuid":"","vendor":"SanDisk"},
+  {"block_size":"","label":"PEN LLAVES","model":"Ultra","name":"\/dev\/sdc1","parent":"\/dev\/sdc","size":"60063712","type":"vfat","uuid":"1795-6A76","vendor":"SanDisk"},
+  {"block_size":"512","label":"","model":"VBOX HARDDISK","name":"\/dev\/sda","parent":"","size":"234263296","type":"","uuid":"","vendor":"ATA"},
+  {"block_size":"","label":"","model":"VBOX HARDDISK","name":"\/dev\/sda1","parent":"\/dev\/sda","size":"997376","type":"ext2","uuid":"380e8a6f-7649-49e5-ab0e-15341f3934f2","vendor":"ATA"},
+  {"block_size":"","label":"","model":"VBOX HARDDISK","name":"\/dev\/sda2","parent":"\/dev\/sda","size":"2","type":"","uuid":"","vendor":"ATA"},
+  {"block_size":"","label":"","model":"VBOX HARDDISK","name":"\/dev\/sda5","parent":"\/dev\/sda","size":"233261056","type":"LVM2_member","uuid":"0HVkLo-gWFU-xO72-2tTU-BKtR-2VUx-otIbYl","vendor":"ATA"},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop0","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop1","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop2","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop3","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop4","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop5","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop6","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/loop7","parent":"","size":"0","type":"","uuid":"","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/dm-0","parent":"\/dev\/sda5","size":"231202816","type":"ext4","uuid":"4f4d57bb-0a38-4bc6-beb9-3d9a0b6b97eb","vendor":""},
+  {"block_size":"512","label":"","model":"","name":"\/dev\/dm-1","parent":"\/dev\/sda5","size":"1998848","type":"swap","uuid":"cc20cb61-14fc-4547-9fc8-f32d82420206","vendor":""}
+]
