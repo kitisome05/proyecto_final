@@ -32,3 +32,42 @@ osqueryi --json "select * from curl_certificate;" > /var/www/html/proyecto/proye
 osqueryi --json "select * from disk_encryption;" > /var/www/html/proyecto/proyecto_final/archivos_json/disk_encryption.json
 	#Resolucion de dns
 osqueryi --json "select * from dns_resolvers;" > /var/www/html/proyecto/proyecto_final/archivos_json/dns_resolvers.json
+	#...Contenedores en el sistema
+osqueryi --json "select * from docker_container_labels;" > /var/www/html/proyecto/proyecto_final/archivos_json/docker_container_labels.json
+	#...Contenedores que estan montados
+osqueryi --json "select * from docker_container_mounts;" > /var/www/html/proyecto/proyecto_final/archivos_json/docker_container_mounts.json
+	#...Red de los contenedores
+osqueryi --json "select * from docker_container_networks;" > /var/www/html/proyecto/proyecto_final/archivos_json/docker_container_networks.json
+	#...Puerto de los contenedores
+osqueryi --json "select * from docker_container_ports;" > /var/www/html/proyecto/proyecto_final/archivos_json/docker_container_ports.json
+	#...Instancia de metadatos
+osqueryi --json "select * from ec2_instance_metadata;" > /var/www/html/proyecto/proyecto_final/archivos_json/ec2_instance_metadata.json
+	#/etc/hosts nos muestra dns
+osqueryi --json "select * from etc_hosts;" > /var/www/html/proyecto/proyecto_final/archivos_json/etc_hosts.json
+	#Protocolos del sistema
+osqueryi --json "select * from etc_protocols;" > /var/www/html/proyecto/proyecto_final/archivos_json/etc_protocols.json
+	#Servicios del sistema
+osqueryi --json "select * from etc_services;" > /var/www/html/proyecto/proyecto_final/archivos_json/etc_services.json
+	#...Atributos y metadatos de archivos del sistema
+osqueryi --json "select * from file;" > /var/www/html/proyecto/proyecto_final/archivos_json/file.json
+	#...Eventos de archivos modificados que tenemos configurado
+osqueryi --json "select * from file_events;" > /var/www/html/proyecto/proyecto_final/archivos_json/file_events.json
+	#Extenciones de firefox
+osqueryi --json "select * from firefox_addons;" > /var/www/html/proyecto/proyecto_final/archivos_json/firefox_addons.json
+	#Grupos del sistema
+osqueryi --json "select * from groups;" > /var/www/html/proyecto/proyecto_final/archivos_json/groups.json
+	#...Eventos de hardware como USB, PCI...
+osqueryi --json "select * from hardware_events;" > /var/www/html/proyecto/proyecto_final/archivos_json/hardware_events.json
+	#...Sistema de archivos de Hash de datos
+osqueryi --json "select * from hash;" > /var/www/html/proyecto/proyecto_final/archivos_json/hash.json
+	#...Version e info del procesador intel
+osqueryi --json "select * from intel_me_info;" > /var/www/html/proyecto/proyecto_final/archivos_json/intel_me_info.json
+	#
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+osqueryi --json "select * from ;" > /var/www/html/proyecto/proyecto_final/archivos_json/.json
+
