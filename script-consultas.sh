@@ -1,15 +1,15 @@
 #Consultas Graficas
 osqueryi --json "select name, total_size from processes order by total_size desc limit 5;" > /var/www/html/proyecto/proyecto_final/archivos_json/processes.json
 	#Unidades de almacenamiento 
-osqueryi --json "select * from block_devices;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/block_devices.json
+osqueryi --json "select model, size, vendor from block_devices;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/block_devices.json
 	#Tiempo utilizado por la cpu
-osqueryi --json "select * from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu_time.json
+osqueryi --json "select core, idle, iowait, nice, system, user from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu_time.json
 	#Base de datos de los paquetes instalados
-osqueryi --json "select * from deb_packages;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/deb_packages.json
+osqueryi --json "select name, size from deb_packages;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/deb_packages.json
 	#Detalles de las interfaces- paquetes de salida y entrada
-osqueryi --json "select * from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interface_details.json
+osqueryi --json "select interface, ipackets, opackets, ibytes, obytes from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interface_details.json
 	#Modulos del Kernel
-osqueryi --json "select * from kernel_modules;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/kernel_modules.json
+osqueryi --json "select name, size from kernel_modules;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/kernel_modules.json
 
 #Consultas Generales
 osqueryi --json "select * from acpi_tables;" > /var/www/html/proyecto/proyecto_final/archivos_json/acpi_tables.json

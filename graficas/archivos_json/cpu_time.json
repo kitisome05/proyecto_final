@@ -1,6 +1,6 @@
 [
-  {"core":"0","guest":"0","guest_nice":"0","idle":"7238282","iowait":"1961","irq":"0","nice":"402","softirq":"1342","steal":"0","system":"52994","user":"483141"},
-  {"core":"1","guest":"0","guest_nice":"0","idle":"7218785","iowait":"4064","irq":"0","nice":"546","softirq":"1535","steal":"0","system":"57200","user":"488426"},
-  {"core":"2","guest":"0","guest_nice":"0","idle":"7228384","iowait":"875","irq":"0","nice":"914","softirq":"753","steal":"0","system":"56840","user":"485629"},
-  {"core":"3","guest":"0","guest_nice":"0","idle":"7233855","iowait":"2078","irq":"0","nice":"459","softirq":"1106","steal":"0","system":"46399","user":"488853"}
+  {"core":"0","idle":"1379860","iowait":"344","nice":"213","system":"9923","user":"51064"},
+  {"core":"1","idle":"1377700","iowait":"640","nice":"89","system":"10276","user":"50201"},
+  {"core":"2","idle":"1379846","iowait":"398","nice":"237","system":"9069","user":"51583"},
+  {"core":"3","idle":"1378398","iowait":"331","nice":"272","system":"8557","user":"53165"}
 ]
