@@ -5,7 +5,7 @@ osqueryi --json "select model, size, vendor from block_devices;" > /var/www/html
 	#Tiempo utilizado por la cpu
 osqueryi --json "select core, idle, iowait, nice, system, user from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu_time.json
 	#Base de datos de los paquetes instalados
-osqueryi --json "select name, size from deb_packages;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/deb_packages.json
+osqueryi --json "select name, size from deb_packages order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/deb_packages.json
 	#Detalles de las interfaces- paquetes de salida y entrada
 osqueryi --json "select interface, ipackets, opackets, ibytes, obytes from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interface_details.json
 	#Modulos del Kernel

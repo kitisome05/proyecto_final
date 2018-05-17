@@ -1,6 +1,31 @@
-[
-  {"core":"0","idle":"1379860","iowait":"344","nice":"213","system":"9923","user":"51064"},
-  {"core":"1","idle":"1377700","iowait":"640","nice":"89","system":"10276","user":"50201"},
-  {"core":"2","idle":"1379846","iowait":"398","nice":"237","system":"9069","user":"51583"},
-  {"core":"3","idle":"1378398","iowait":"331","nice":"272","system":"8557","user":"53165"}
+{
+    "cols": [
+        {"id":"","label":"Nucleo","pattern":"","type":"number"},
+        {"id":"","label":"Tareas inactivas","pattern":"","type":"number"},
+        {"id":"","label":"Esperando E-S","pattern":"","type":"number"},
+        {"id":"","label":"Prioridad baja","pattern":"","type":"number"},
+        {"id":"","label":"Sistema","pattern":"","type":"number"},
+        {"id":"","label":"Usuarrio","pattern":"","type":"number"}
+      ],
+"rows":[
+  {"v":0,"v":1379860,"v":344,"v":213,"v":9923,"v":51064},
+  {"v":1,"v":1377700,"v":640,"v":89,"v":10276,"v":50201},
+  {"v":2,"v":1379846,"v":398,"v":237,"v":9069,"v":51583},
+  {"v":3,"v":1378398,"v":331,"v":272,"v":8557,"v":53165}
+]}
+
+//core, idle, iowait, nice, system, user
+
+{
+    "cols": [
+        {"id":"","label":"Topping","pattern":"","type":"string"},
+        {"id":"","label":"Paquetes","pattern":"","type":"number"}
+      ],
+"rows":[
+  {"c":[{"v":"brackets"},{"v":231325}]},
+  {"c":[{"v":"linux-firmware"},{"v":207968}]},
+  {"c":[{"v":"firefox"},{"v":171918}]},
+  {"c":[{"v":"linux-image-extra-4.4.0-116-generic"},{"v":151521}]},
+  {"c":[{"v":"libgl1-mesa-dri"},{"v":129344}]}
 ]
+}
