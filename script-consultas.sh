@@ -144,3 +144,5 @@ osqueryi --json "select * from time;" > /var/www/html/proyecto/proyecto_final/ar
 osqueryi --json "select * from uptime;" > /var/www/html/proyecto/proyecto_final/archivos_json/uptime.json
 	#Usuarios
 osqueryi --json "select * from users;" > /var/www/html/proyecto/proyecto_final/archivos_json/users.json
+	#Nombre de aplicaciones puerto y pid
+osqueryi --json "select DISTINCT process.name, listening.port, process.pid from processes as process join listening_ports as listening on process.pid = listening.pid where listening.address = '0.0.0.0';" > /var/www/html/proyecto/proyecto_final/archivos_json/app.json
