@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      // Load the Visualization API and the piechart package.
+    google.charts.load('current', {'packages':['corechart']});
+      
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+  </script>
+</head>
+    <body>
+        <h1 id="title">Monitorizacion del CPU</h1>
+    <div class="row slideanim">
+        <div id="users" class="col-sm-6" style = "width: 550px; height: 400px; margin: 0 auto">
+            </div>
+            <script language = "JavaScript">
+                 function drawChart() {
+              var jsonData = $.ajax({
+                  url: "/proyecto/proyecto_final/graficas/archivos_json/cpu/users.php",
+                  dataType: "json",
+                  async: false
+                  }).responseText;
+                       // Create our data table out of JSON data loaded from server.
+              var data = new google.visualization.DataTable(jsonData);
+
+                    var options = {title: 'Tiempo que emplea el nucleo para el usuario'}; 
+
+                    // Instantiate and draw the chart.
+                    var chart = new google.visualization.ColumnChart(document.getElementById('users'));
+                    chart.draw(data, options);
+                 }
+                 google.charts.setOnLoadCallback(drawChart);
+              </script>
+        
+        <div id="system" class="col-sm-6">
+            Prueba
+        </div>
+    </div>
+    <div id="prioridad-baja" class="row slideanim">
+        <div class="col-sm-6">
+            Prueba
+        </div>
+        <div id="dispositivosE-S" class="col-sm-6">
+            Prueba
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+  <html>
+  <head>
+    <h1>Tiempo empleado en el inicio del sistema etc...</h1>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    // Load the Visualization API and the piechart package.
+    google.charts.load('current', {'packages':['corechart']});
+      
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      var jsonData = $.ajax({
+          url: "archivos_json/cpu/system.php",
+          dataType: "json",
+          async: false
+          }).responseText;
+
+        var options = {
+          title: 'Nucleos del sistema',
+          pieHole: 0.4,
+        };
+          // Create our data table out of JSON data loaded from server.
+      var data = new google.visualization.DataTable(jsonData);
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="donutchart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
+

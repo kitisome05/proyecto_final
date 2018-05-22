@@ -1,6 +1,12 @@
-[
-  {"core":"0","iowait":"174"},
-  {"core":"1","iowait":"191"},
-  {"core":"2","iowait":"208"},
-  {"core":"3","iowait":"218"}
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Slices","pattern":"","type":"number"}
+            ],
+
+"rows":[
+  {"c":[{"v":"0"},{"v":174}]},
+  {"c":[{"v":"1"},{"v":191}]},
+  {"c":[{"v":"2"},{"v":208}]},
+  {"c":[{"v":"3"},{"v":218}]}
 ]
+}

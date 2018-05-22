@@ -1,6 +1,12 @@
-[
-  {"core":"0","nice":"24"},
-  {"core":"1","nice":"46"},
-  {"core":"2","nice":"23"},
-  {"core":"3","nice":"63"}
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Slices","pattern":"","type":"number"}
+            ],
+"rows":[
+  {"c":[{"v":"0"},{"v":24}]},
+  {"c":[{"v":"1"},{"v":46}]},
+  {"c":[{"v":"2"},{"v":23}]},
+  {"c":[{"v":"3"},{"v":63}]}
 ]
+
+}
