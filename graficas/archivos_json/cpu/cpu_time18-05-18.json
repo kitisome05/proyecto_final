@@ -1,6 +1,0 @@
-[
-  {"core":"0","idle":"595389","iowait":"287","nice":"148","system":"3191","user":"29241"},
-  {"core":"1","idle":"594758","iowait":"262","nice":"137","system":"2784","user":"29857"},
-  {"core":"2","idle":"595035","iowait":"610","nice":"159","system":"2994","user":"29281"},
-  {"core":"3","idle":"593513","iowait":"244","nice":"19","system":"2888","user":"30739"}
-]

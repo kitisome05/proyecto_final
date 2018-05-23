@@ -1,6 +1,6 @@
 [
-  {"core":"0","iowait":"402"},
-  {"core":"1","iowait":"220"},
+  {"core":"0","iowait":"401"},
+  {"core":"1","iowait":"219"},
   {"core":"2","iowait":"268"},
   {"core":"3","iowait":"306"}
 ]

@@ -1,12 +1,6 @@
-{
-    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
-             {"id":"","label":"Slices","pattern":"","type":"number"}
-            ],
-    
-"rows":[
-    {"c":[{"v":"0"},{"v":1110}]},
-    {"c":[{"v":"1"},{"v":968}]},
-    {"c":[{"v":"2"},{"v":947}]},
-    {"c":[{"v":"3"},{"v":902}]}
-    ]
-}
+[
+  {"core":"0","system":"2340"},
+  {"core":"1","system":"2780"},
+  {"core":"2","system":"2189"},
+  {"core":"3","system":"1848"}
+]

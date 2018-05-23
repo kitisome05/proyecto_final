@@ -1,0 +1,12 @@
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Slices","pattern":"","type":"number"}
+            ],
+"rows":[
+  {"c":[{"v":"0"},{"v":24}]},
+  {"c":[{"v":"1"},{"v":46}]},
+  {"c":[{"v":"2"},{"v":23}]},
+  {"c":[{"v":"3"},{"v":63}]}
+]
+
+}

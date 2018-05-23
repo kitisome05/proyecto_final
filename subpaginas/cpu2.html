@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--graficacion de USERS -->
+            <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.charts.load('current', {'packages':['corechart']});
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+              var jsonData = $.ajax({
+                  url: "../graficas/archivos_json/cpu/users.php",
+                  dataType: "json",
+                  async: false
+                  }).responseText;
+                
+                var options = {
+                    title: 'Tiempo empleado en el usuario',
+                }
+
+              // Create our data table out of JSON data loaded from server.
+              var data = new google.visualization.DataTable(jsonData);
+
+              // Instantiate and draw our chart, passing in some options.
+              var chart = new google.visualization.PieChart(document.getElementById('users'));
+              chart.draw(data, options);
+            }
+
+            </script>
+    <!--Graficacion SYSTEM -->
+            <script type="text/javascript">
+
+            // Load the Visualization API and the piechart package.
+            google.charts.load('current', {'packages':['corechart']});
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+              var jsonData = $.ajax({
+                  url: "../graficas/archivos_json/cpu/system.php",
+                  dataType: "json",
+                  async: false
+                  }).responseText;
+
+                var options = {
+                  title: 'Tiempo empleado en el sistema',
+                  pieHole: 0.4,
+                };
+                  // Create our data table out of JSON data loaded from server.
+              var data = new google.visualization.DataTable(jsonData);
+
+                var chart = new google.visualization.PieChart(document.getElementById('system'));
+                chart.draw(data, options);
+              }
+            </script>
+    <!--Graficacion prioridad baja -->
+            <script type="text/javascript">
+    
+                // Load the Visualization API and the piechart package.
+                google.charts.load('current', {'packages':['corechart']});
+
+                // Set a callback to run when the Google Visualization API is loaded.
+                google.charts.setOnLoadCallback(drawChart);
+
+                function drawChart() {
+                  var jsonData = $.ajax({
+                      url: "../graficas/archivos_json/cpu/prioridad-baja.php",
+                      dataType: "json",
+                      async: false
+                      }).responseText;
+                var options = {
+                    title: 'Tiempo empleado en procesos modo prioridad-baja',
+                }
+
+                  // Create our data table out of JSON data loaded from server.
+                  var data = new google.visualization.DataTable(jsonData);
+
+                  // Instantiate and draw our chart, passing in some options.
+                  var chart = new google.visualization.PieChart(document.getElementById('prioridad-baja'));
+                  chart.draw(data, options);
+                }
+            </script>
+    <!-- Graficacion dispositivosE-S -->
+            <script type="text/javascript">
+    
+                // Load the Visualization API and the piechart package.
+                google.charts.load('current', {'packages':['corechart']});
+
+                // Set a callback to run when the Google Visualization API is loaded.
+                google.charts.setOnLoadCallback(drawChart);
+
+                  function drawChart() {
+                  var jsonData = $.ajax({
+                      url: "../graficas/archivos_json/cpu/dispositivosE-S.php",
+                      dataType: "json",
+                      async: false
+                      }).responseText;
+
+                    var options = {
+                      title: 'Tiempo empleado en que se conectasen los dispositivos de Entrada y Salida',
+                      curveType: 'function',
+                      legend: { position: 'bottom' }
+                    };
+
+                       // Create our data table out of JSON data loaded from server.
+                  var data = new google.visualization.DataTable(jsonData);
+
+                    var chart = new google.visualization.LineChart(document.getElementById('dispositivosE-S'));
+
+                    chart.draw(data, options);
+                  }
+            </script>
+</head>
+    <body>
+        <h1 id="title">Monitorizacion del CPU</h1>
+    <div class="row slideanim">
+        <div id="users" class="col-sm-6" style = "width: 550px; height: 400px; margin: 0 auto">
+            </div>
+        <div id="system" class="col-sm-6" style = "width: 550px; height: 400px; margin: 0 auto">
+        </div>
+    </div>
+    <div class="row slideanim">
+        <div id="prioridad-baja" class="col-sm-6" style = "width: 550px; height: 400px; margin: 0 auto">
+        </div>
+        <div id="dispositivosE-S" class="col-sm-6" style = "width: 550px; height: 400px; margin: 0 auto">
+        </div>
+    </div>
+    </body>
+</html>
