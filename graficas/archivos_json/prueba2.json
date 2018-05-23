@@ -1,0 +1,6 @@
+[
+  {"core":"0","iowait":"249"},
+  {"core":"1","iowait":"146"},
+  {"core":"2","iowait":"430"},
+  {"core":"3","iowait":"479"}
+]

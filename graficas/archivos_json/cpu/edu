@@ -1,0 +1,3 @@
+scrip en bash y que a los formatos intermedios
+
+cat pepe.json |tr ',' ':' |tr -d '{'|tr -d '}'|tr -d '"'|tr -d '['|tr -d ']'>pepito.json
