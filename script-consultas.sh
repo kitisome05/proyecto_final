@@ -2,6 +2,7 @@
 osqueryi --json "select name, total_size from processes order by total_size desc limit 5;" > /var/www/html/proyecto/proyecto_final/archivos_json/processes.json
 	#Unidades de almacenamiento 
 osqueryi --json "select model, size, vendor from block_devices;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/block_devices.json
+osqueryi --json "select label, size from block_devices where label !='';" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/device/pen-almacenamiento.json
 	#Tiempo utilizado por la cpu
 osqueryi --json "select core, idle, iowait, nice, system, user from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu_time.json
 	#Base de datos de los paquetes instalados
