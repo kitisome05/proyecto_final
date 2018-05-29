@@ -1,0 +1,11 @@
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Ipackages","pattern":"","type":"number"},
+             {"id":"","label":"Opackages","pattern":"","type":"number"}
+            ],
+"rows":[
+{"c":[{"v":"lo"},{"v":1157},{"v":1157}]},
+{"c":[{"v":"enp0s3"},{"v":1355},{"v":954
+}]},
+]
+}

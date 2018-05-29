@@ -1,13 +1,10 @@
 {
     "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
-             {"id":"","label":"Slices","pattern":"","type":"number"},
-             {"id":"","label":"Slices","pattern":"","type":"number"},
-             {"id":"","label":"Slices","pattern":"","type":"number"},
-             {"id":"","label":"Slices","pattern":"","type":"number"}
+             {"id":"","label":"ibytes","pattern":"","type":"number"},
+             {"id":"","label":"obytes","pattern":"","type":"number"},
             ],
 "rows":[
-{"c":[{"v":"lo"},{"v":21952522},{"v":18077},{"v":21952522},{"v":18077}]},
-{"c":[{"v":"enp0s3"},{"v":40466601},{"v":46616},{"v":3047361},{"v":24906
-}]},
+{"c":[{"v":"lo"},{"v":21952522},{"v":21952522}]},
+{"c":[{"v":"enp0s3"},{"v":40466601},{"v":3047361},]},
 ]
 }

@@ -17,9 +17,11 @@ osqueryi --json "select core, nice from cpu_time;" > /var/www/html/proyecto/proy
 osqueryi --json "select name, size, version, arch from deb_packages order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/packages/tabla-packages.jso
 osqueryi --json "select name, size from deb_packages order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/packages/size_packages.json
 	#Detalles de las interfaces- paquetes de salida y entrada
-osqueryi --json "select interface, ipackets, opackets, ibytes, obytes from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interface_details.json
+osqueryi --json "select interface, ibytes, obytes from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interfaces/interface_details.json
+osqueryi --json "select interface, ipackets, opackets from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interfaces/interface-details.json
+osqueryi --json "select interface, mac from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interfaces/interface-mac.json
 	#Modulos del Kernel
-osqueryi --json "select name, size from kernel_modules;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/kernel_modules.json
+osqueryi --json "select name, size from kernel_modules order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/size_modules.json
 
 #Consultas Generales
 osqueryi --json "select * from acpi_tables;" > /var/www/html/proyecto/proyecto_final/archivos_json/acpi_tables.json
