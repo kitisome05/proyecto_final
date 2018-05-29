@@ -1,0 +1,7 @@
+[
+  {"arch":"amd64","name":"brackets","size":"231325","version":"1.12.0libgcrypt11-17621+1~webupd8~0"},
+  {"arch":"amd64","name":"spotify-client","size":"223169","version":"1:1.0.77.338.g758ebd78-41"},
+  {"arch":"all","name":"linux-firmware","size":"207968","version":"1.157.17"},
+  {"arch":"amd64","name":"firefox","size":"171918","version":"59.0.2+build1-0ubuntu0.16.04.3"},
+  {"arch":"amd64","name":"linux-image-extra-4.4.0-116-generic","size":"151521","version":"4.4.0-116.140"}
+]

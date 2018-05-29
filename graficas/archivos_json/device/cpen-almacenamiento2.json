@@ -1,0 +1,12 @@
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Slices","pattern":"","type":"number"}
+            ],
+"rows":[
+{"c":[{"v":"W7_TODO_EN_UNO"},{"v":30216794}]},
+{"c":[{"v":"COPIA SEGUR"},{"v":15154209}]},
+{"c":[{"v":"PEN LLAVES"},{"v":60063712}]},
+{"c":[{"v":"TOSHIBA EXT"},{"v":1953521068
+}]},
+]
+}

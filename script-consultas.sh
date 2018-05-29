@@ -1,12 +1,21 @@
 #Consultas Graficas
 osqueryi --json "select name, total_size from processes order by total_size desc limit 5;" > /var/www/html/proyecto/proyecto_final/archivos_json/processes.json
 	#Unidades de almacenamiento 
-osqueryi --json "select model, size, vendor from block_devices;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/block_devices.json
+osqueryi --json "select label, model, name, size, type, vendor from block_devices where uuid !='' and model !='';" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/device/tabla-almacenamiento.json
 osqueryi --json "select label, size from block_devices where label !='';" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/device/pen-almacenamiento.json
 	#Tiempo utilizado por la cpu
 osqueryi --json "select core, idle, iowait, nice, system, user from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu_time.json
+
+osqueryi --json "select core, user from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu/users.json
+
+osqueryi --json "select core, system from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu/system.json
+
+osqueryi --json "select core, iowait from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu/dispositivosE-S.json
+
+osqueryi --json "select core, nice from cpu_time;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/cpu/prioridad-baja.json
 	#Base de datos de los paquetes instalados
-osqueryi --json "select name, size from deb_packages order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/deb_packages.json
+osqueryi --json "select name, size, version, arch from deb_packages order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/packages/tabla-packages.jso
+osqueryi --json "select name, size from deb_packages order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/packages/size_packages.json
 	#Detalles de las interfaces- paquetes de salida y entrada
 osqueryi --json "select interface, ipackets, opackets, ibytes, obytes from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interface_details.json
 	#Modulos del Kernel

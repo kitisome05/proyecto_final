@@ -1,0 +1,13 @@
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Tamaño (MB)","pattern":"","type":"number"}
+            ],
+"rows":[
+{"c":[{"v":"brackets"},{"v":231325}]},
+{"c":[{"v":"spotify-client"},{"v":223169}]},
+{"c":[{"v":"linux-firmware"},{"v":207968}]},
+{"c":[{"v":"firefox"},{"v":171918}]},
+{"c":[{"v":"linux-image-extra-4.4.0-116-generic"},{"v":151521
+}]},
+]
+}
