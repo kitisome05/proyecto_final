@@ -1,4 +1,5 @@
 #Consultas Graficas
+	#Procesos
 osqueryi --json "select name, total_size from processes order by total_size desc limit 5;" > /var/www/html/proyecto/proyecto_final/archivos_json/processes.json
 	#Unidades de almacenamiento 
 osqueryi --json "select label, model, name, size, type, vendor from block_devices where uuid !='' and model !='';" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/device/tabla-almacenamiento.json
@@ -21,7 +22,7 @@ osqueryi --json "select interface, ibytes, obytes from interface_details;" > /va
 osqueryi --json "select interface, ipackets, opackets from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interfaces/interface-details.json
 osqueryi --json "select interface, mac from interface_details;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/interfaces/interface-mac.json
 	#Modulos del Kernel
-osqueryi --json "select name, size from kernel_modules order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/size_modules.json
+osqueryi --json "select name, size from kernel_modules order by size desc limit 5;" > /var/www/html/proyecto/proyecto_final/graficas/archivos_json/modules/size_modules.json
 
 #Consultas Generales
 osqueryi --json "select * from acpi_tables;" > /var/www/html/proyecto/proyecto_final/archivos_json/acpi_tables.json

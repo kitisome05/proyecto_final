@@ -149,6 +149,10 @@ body {
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+#icono {
+    width: 100px;
+    height: 100px;
+}
   @keyframes slide {
     0% {
       opacity: 0;

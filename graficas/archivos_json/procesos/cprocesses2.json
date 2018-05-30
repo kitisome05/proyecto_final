@@ -1,0 +1,13 @@
+{
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Slices","pattern":"","type":"number"}
+            ],
+"rows":[
+{"c":[{"v":"firefox"},{"v":2988888000}]},
+{"c":[{"v":"spotify"},{"v":2962996000}]},
+{"c":[{"v":"spotify"},{"v":2382156000}]},
+{"c":[{"v":"Brackets"},{"v":2114804000}]},
+{"c":[{"v":"Web Content"},{"v":1927968000
+}]},
+]
+}
