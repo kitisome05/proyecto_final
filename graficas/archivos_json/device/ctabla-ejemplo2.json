@@ -1,18 +1,14 @@
 {
-    "cols": [{"id":"","label":"Nombre","pattern":"","type":"string"},
-             {"id":"","label":"Tipo","pattern":"","type":"string"},
-             {"id":"","label":"Localizacion","pattern":"","type":"string"},
-             {"id":"","label":"Tamaño","pattern":"","type":"number"},
-             {"id":"","label":"Formato","pattern":"","type":"string"},
-             {"id":"","label":"Marca","pattern":"","type":"string"}
+    "cols": [{"id":"","label":"Topping","pattern":"","type":"string"},
+             {"id":"","label":"Slices","pattern":"","type":"number"}
             ],
 "rows":[
-{"c":[{"v":"PEN LLAVES"},{"v":"Ultra"},{"v":"\/dev\/sdf1"},{"v":60063712},{"v":"vfat"},{"v":"SanDisk}]},
-{"c":[{"v":"W7_TODO_EN_UNO"},{"v":"DataTraveler 3.0"},{"v":"\/dev\/sdb1"},{"v":30216794},{"v":"ntfs"},{"v":"Kingston}]},
-{"c":[{"v":"TOSHIBA EXT"},{"v":"External USB 3.0"},{"v":"\/dev\/sdc1"},{"v":1953521068},{"v":"ntfs"},{"v":"TOSHIBA}]},
-{"c":[{"v":"COPIA SEGUR"},{"v":"TransMemory"},{"v":"\/dev\/sdd1"},{"v":15154209},{"v":"vfat"},{"v":"TOSHIBA}]},
-{"c":[{"v":""},{"v":"VBOX HARDDISK"},{"v":"\/dev\/sda1"},{"v":997376},{"v":"ext2"},{"v":"ATA}]},
-{"c":[{"v":""},{"v":"VBOX HARDDISK"},{"v":"\/dev\/sda5"},{"v":233261056},{"v":"LVM2_member"},{"v":"ATA
+{"c":[{"v":"PEN LLAVES"},{"v":Ultra"},{"v":\/dev\/sdf1"},{"v":60063712"},{"v":vfat"},{"v":SanDisk}]},
+{"c":[{"v":"W7_TODO_EN_UNO"},{"v":DataTraveler 3.0"},{"v":\/dev\/sdb1"},{"v":30216794"},{"v":ntfs"},{"v":Kingston}]},
+{"c":[{"v":"TOSHIBA EXT"},{"v":External USB 3.0"},{"v":\/dev\/sdc1"},{"v":1953521068"},{"v":ntfs"},{"v":TOSHIBA}]},
+{"c":[{"v":"COPIA SEGUR"},{"v":TransMemory"},{"v":\/dev\/sdd1"},{"v":15154209"},{"v":vfat"},{"v":TOSHIBA}]},
+{"c":[{"v":""},{"v":VBOX HARDDISK"},{"v":\/dev\/sda1"},{"v":997376"},{"v":ext2"},{"v":ATA}]},
+{"c":[{"v":""},{"v":VBOX HARDDISK"},{"v":\/dev\/sda5"},{"v":233261056"},{"v":LVM2_member"},{"v":ATA
 }]},
 ]
 }
