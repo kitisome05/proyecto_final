@@ -6,20 +6,14 @@
  google.charts.setOnLoadCallback(drawTable); 
  function drawTable() { 
  var data = new google.visualization.DataTable(); 
-data.addColumn('string','  label');
-data.addColumn('string','model');
-data.addColumn('string','name');
-data.addColumn('string','size');
+data.addColumn('string','  address');
+data.addColumn('string','id');
+data.addColumn('string','netmask');
+data.addColumn('string','options');
 data.addColumn('string','type');
-data.addColumn('string','vendor');
 data.addRows([
-['PEN LLAVES','Ultra','\/dev\/sdf1','60063712','vfat','SanDisk',],
-['W7_TODO_EN_UNO','DataTraveler 3.0','\/dev\/sdb1','30216794','ntfs','Kingston',],
-['TOSHIBA EXT','External USB 3.0','\/dev\/sdc1','1953521068','ntfs','TOSHIBA',],
-['COPIA SEGUR','TransMemory','\/dev\/sdd1','15154209','vfat','TOSHIBA',],
-['##','VBOX HARDDISK','\/dev\/sda1','997376','ext2','ATA',],
-['##','VBOX HARDDISK','\/dev\/sda5','233261056','LVM2_member','ATA
-',],
+['192.168.1.1','0','32','524993','nameserver',],
+['##','0','##','524993','search ',],
 ]);
  var table = new google.visualization.Table(document.getElementById('table_div')); 
  table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
