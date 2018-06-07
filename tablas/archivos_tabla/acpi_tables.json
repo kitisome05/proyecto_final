@@ -1,0 +1,8 @@
+[
+  {"md5":"a65e6681cfafad89e8604f46a2bcd6e7","name":"APIC","size":"108"},
+  {"md5":"2da692f6bee4be8155a8082f6e1310b1","name":"DSDT","size":"8703"},
+  {"md5":"11e34668847cf3ffa231c768b6865c1f","name":"FACP","size":"244"},
+  {"md5":"9f48d60a7aa26ff18b6537cfcfd4687e","name":"FACS1","size":"64"},
+  {"md5":"9f48d60a7aa26ff18b6537cfcfd4687e","name":"FACS2","size":"64"},
+  {"md5":"bf12c87c7a4b354630fd480fcc5d2b24","name":"SSDT","size":"460"}
+]

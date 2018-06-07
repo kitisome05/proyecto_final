@@ -41,6 +41,7 @@ osqueryi --json "select * from carves;" > /var/www/html/proyecto/proyecto_final/
 osqueryi --json "select * from cpuid;" > /var/www/html/proyecto/proyecto_final/archivos_json/cpuid.json
 	#.Eventos realizados en el sistema
 osqueryi --json "select * from crontab;" > /var/www/html/proyecto/proyecto_final/archivos_json/crontab.json
+###################################    ME HE QUEDADO AQUI LINDO
 	#...Registro de solicitudes http
 osqueryi --json "select * from curl;" > /var/www/html/proyecto/proyecto_final/archivos_json/curl.json
 	#...Inspeccion de los certificados

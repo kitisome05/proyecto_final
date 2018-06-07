@@ -1,0 +1,10 @@
+
+  command:root cd \/ && run-parts --report \/etc\/cron.hourly:day_of_month:*:day_of_week:*:event:##:hour:*:minute:17:month:*:path:\/etc\/crontab:
+  command:root test -x \/usr\/sbin\/anacron || ( cd \/ && run-parts --report \/etc\/cron.daily ):day_of_month:*:day_of_week:*:event:##:hour:6:minute:25:month:*:path:\/etc\/crontab:
+  command:root test -x \/usr\/sbin\/anacron || ( cd \/ && run-parts --report \/etc\/cron.weekly ):day_of_month:*:day_of_week:7:event:##:hour:6:minute:47:month:*:path:\/etc\/crontab:
+  command:root test -x \/usr\/sbin\/anacron || ( cd \/ && run-parts --report \/etc\/cron.monthly ):day_of_month:1:day_of_week:*:event:##:hour:6:minute:52:month:*:path:\/etc\/crontab:
+  command:root test -x \/etc\/init.d\/anacron && \/usr\/sbin\/invoke-rc.d anacron start >\/dev\/null:day_of_month:*:day_of_week:*:event:##:hour:7:minute:30:month:*:path:\/etc\/cron.d\/anacron:
+  command:root if  -x \/usr\/share\/mdadm\/checkarray  &&  $(date +\\%d) -le 7 ; then \/usr\/share\/mdadm\/checkarray --cron --all --idle --quiet; fi:day_of_month:*:day_of_week:0:event:##:hour:0:minute:57:month:*:path:\/etc\/cron.d\/mdadm:
+  command:root  -x \/usr\/lib\/php\/sessionclean  && \/usr\/lib\/php\/sessionclean:day_of_month:*:day_of_week:*:event:##:hour:*:minute:09:39:month:*:path:\/etc\/cron.d\/php:
+  command:root test -x \/etc\/cron.daily\/popularity-contest && \/etc\/cron.daily\/popularity-contest --crond:day_of_month:*:day_of_week:*:event:##:hour:8:minute:41:month:*:path:\/etc\/cron.d\/popularity-contest
+
