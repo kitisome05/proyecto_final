@@ -1,0 +1,18 @@
+
+  destination:0.0.0.0:flags:0:gateway:192.168.1.1:interface:enp0s3:metric:0:mtu:0:netmask:0:source:##:type:gateway:
+  destination:169.254.0.0:flags:0:gateway:##:interface:enp0s3:metric:1000:mtu:0:netmask:16:source:##:type:gateway:
+  destination:192.168.1.0:flags:0:gateway:##:interface:enp0s3:metric:0:mtu:0:netmask:24:source:192.168.1.165:type:gateway:
+  destination:127.0.0.0:flags:0:gateway:##:interface:lo:metric:0:mtu:0:netmask:0:source:127.0.0.1:type:broadcast:
+  destination:127.0.0.0:flags:0:gateway:##:interface:lo:metric:0:mtu:0:netmask:8:source:127.0.0.1:type:local:
+  destination:127.0.0.1:flags:0:gateway:##:interface:lo:metric:0:mtu:0:netmask:0:source:127.0.0.1:type:local:
+  destination:127.255.255.255:flags:0:gateway:##:interface:lo:metric:0:mtu:0:netmask:0:source:127.0.0.1:type:broadcast:
+  destination:192.168.1.0:flags:0:gateway:##:interface:enp0s3:metric:0:mtu:0:netmask:0:source:192.168.1.165:type:broadcast:
+  destination:192.168.1.165:flags:0:gateway:##:interface:enp0s3:metric:0:mtu:0:netmask:0:source:192.168.1.165:type:local:
+  destination:192.168.1.255:flags:0:gateway:##:interface:enp0s3:metric:0:mtu:0:netmask:0:source:192.168.1.165:type:broadcast:
+  destination:fe80:::flags:0:gateway:##:interface:enp0s3:metric:256:mtu:0:netmask:64:source:##:type:gateway:
+  destination:0.0.0.0:flags:0:gateway:##:interface:lo:metric:-1:mtu:0:netmask:0:source:##:type:other:
+  destination:::1:flags:0:gateway:##:interface:lo:metric:0:mtu:0:netmask:0:source:##:type:local:
+  destination:fe80::a00:27ff:fe0a:f8ff:flags:0:gateway:##:interface:lo:metric:0:mtu:0:netmask:0:source:##:type:local:
+  destination:ff00:::flags:0:gateway:##:interface:enp0s3:metric:256:mtu:0:netmask:8:source:##:type:gateway:
+  destination:0.0.0.0:flags:0:gateway:##:interface:lo:metric:-1:mtu:0:netmask:0:source:##:type:other
+

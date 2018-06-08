@@ -1,0 +1,8 @@
+[
+  {"active":"1","discovery_cache_hits":"1","discovery_executions":"1","name":"main","platform":"","shard":"0","version":""},
+  {"active":"1","discovery_cache_hits":"1","discovery_executions":"1","name":"fim","platform":"","shard":"0","version":""},
+  {"active":"1","discovery_cache_hits":"1","discovery_executions":"1","name":"osquery-monitoring","platform":"","shard":"0","version":""},
+  {"active":"1","discovery_cache_hits":"1","discovery_executions":"1","name":"incident-response","platform":"","shard":"0","version":""},
+  {"active":"1","discovery_cache_hits":"1","discovery_executions":"1","name":"it-compliance","platform":"","shard":"0","version":""},
+  {"active":"1","discovery_cache_hits":"1","discovery_executions":"1","name":"vuln-management","platform":"","shard":"0","version":""}
+]

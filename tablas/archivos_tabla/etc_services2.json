@@ -1,0 +1,12 @@
+
+  aliases:##:comment:TCP port service multiplexer:name:tcpmux:port:1:protocol:tcp:
+  aliases:##:comment:##:name:echo:port:7:protocol:tcp:
+  aliases:##:comment:##:name:echo:port:7:protocol:udp:
+  aliases:sink null:comment:##:name:discard:port:9:protocol:tcp:
+  aliases:sink null:comment:##:name:discard:port:9:protocol:udp:
+  aliases:users:comment:##:name:systat:port:11:protocol:tcp:
+  aliases:##:comment:##:name:daytime:port:13:protocol:tcp:
+  aliases:##:comment:##:name:daytime:port:13:protocol:udp:
+  aliases:##:comment:##:name:netstat:port:15:protocol:tcp:
+  aliases:quote:comment:##:name:qotd:port:17:protocol:tcp
+

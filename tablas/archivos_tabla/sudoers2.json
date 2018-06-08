@@ -1,0 +1,8 @@
+
+  header:Defaults:rule_details:env_reset:
+  header:Defaults:rule_details:mail_badpass:
+  header:Defaults:rule_details:secure_path=\\/usr\/local\/sbin:\/usr\/local\/bin:\/usr\/sbin:\/usr\/bin:\/sbin:\/bin:\/snap\/bin\##:
+  header:root:rule_details:ALL=(ALL:ALL) ALL:
+  header:%admin:rule_details:ALL=(ALL) ALL:
+  header:%sudo:rule_details:ALL=(ALL:ALL) ALL
+

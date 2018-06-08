@@ -1,0 +1,12 @@
+[
+  {"driver":"","model":"440FX - 82441FX PMC [Natoma]","model_id":"1237","pci_class":"Bridge","pci_slot":"0000:00:00.0","vendor":"Intel Corporation","vendor_id":"8086"},
+  {"driver":"","model":"82371SB PIIX3 ISA [Natoma\/Triton II]","model_id":"7000","pci_class":"Bridge","pci_slot":"0000:00:01.0","vendor":"Intel Corporation","vendor_id":"8086"},
+  {"driver":"ata_piix","model":"82371AB\/EB\/MB PIIX4 IDE","model_id":"7111","pci_class":"Mass storage controller","pci_slot":"0000:00:01.1","vendor":"Intel Corporation","vendor_id":"8086"},
+  {"driver":"vboxvideo","model":"VirtualBox Graphics Adapter","model_id":"BEEF","pci_class":"Display controller","pci_slot":"0000:00:02.0","vendor":"InnoTek Systemberatung GmbH","vendor_id":"80EE"},
+  {"driver":"e1000","model":"82540EM Gigabit Ethernet Controller (PRO\/1000 MT Desktop Adapter)","model_id":"100E","pci_class":"Network controller","pci_slot":"0000:00:03.0","vendor":"Intel Corporation","vendor_id":"8086"},
+  {"driver":"vboxguest","model":"VirtualBox Guest Service","model_id":"CAFE","pci_class":"Generic system peripheral","pci_slot":"0000:00:04.0","vendor":"InnoTek Systemberatung GmbH","vendor_id":"80EE"},
+  {"driver":"snd_intel8x0","model":"82801AA AC'97 Audio Controller","model_id":"2415","pci_class":"Multimedia controller","pci_slot":"0000:00:05.0","vendor":"Intel Corporation","vendor_id":"8086"},
+  {"driver":"ohci-pci","model":"KeyLargo\/Intrepid USB","model_id":"003F","pci_class":"Serial bus controller","pci_slot":"0000:00:06.0","vendor":"Apple Inc.","vendor_id":"106B"},
+  {"driver":"piix4_smbus","model":"82371AB\/EB\/MB PIIX4 ACPI","model_id":"7113","pci_class":"Bridge","pci_slot":"0000:00:07.0","vendor":"Intel Corporation","vendor_id":"8086"},
+  {"driver":"ahci","model":"82801HM\/HEM (ICH8M\/ICH8M-E) SATA Controller [AHCI mode]","model_id":"2829","pci_class":"Mass storage controller","pci_slot":"0000:00:0d.0","vendor":"Intel Corporation","vendor_id":"8086"}
+]

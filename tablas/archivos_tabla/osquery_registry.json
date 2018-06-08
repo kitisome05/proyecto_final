@@ -1,0 +1,17 @@
+[
+  {"active":"1","internal":"0","name":"filesystem","owner_uuid":"0","registry":"config"},
+  {"active":"0","internal":"0","name":"tls","owner_uuid":"0","registry":"config"},
+  {"active":"0","internal":"0","name":"update","owner_uuid":"0","registry":"config"},
+  {"active":"1","internal":"1","name":"decorators","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"events","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"file_paths","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"kafka_topics","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"options","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"prometheus_targets","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"views","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"0","name":"yara","owner_uuid":"0","registry":"config_parser"},
+  {"active":"1","internal":"1","name":"ephemeral","owner_uuid":"0","registry":"database"},
+  {"active":"0","internal":"1","name":"rocksdb","owner_uuid":"0","registry":"database"},
+  {"active":"0","internal":"1","name":"sqlite","owner_uuid":"0","registry":"database"},
+  {"active":"1","internal":"0","name":"tls","owner_uuid":"0","registry":"distributed"}
+]

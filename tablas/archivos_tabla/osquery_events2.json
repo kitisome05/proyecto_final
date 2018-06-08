@@ -1,0 +1,13 @@
+
+  active:1:events:0:name:audit:publisher:audit:refreshes:0:subscriptions:3:type:publisher:
+  active:1:events:0:name:inotify:publisher:inotify:refreshes:0:subscriptions:5:type:publisher:
+  active:1:events:0:name:syslog:publisher:syslog:refreshes:1:subscriptions:1:type:publisher:
+  active:1:events:0:name:udev:publisher:udev:refreshes:0:subscriptions:1:type:publisher:
+  active:1:events:0:name:file_events:publisher:inotify:refreshes:0:subscriptions:5:type:subscriber:
+  active:1:events:0:name:hardware_events:publisher:udev:refreshes:0:subscriptions:1:type:subscriber:
+  active:1:events:0:name:process_events:publisher:audit:refreshes:0:subscriptions:1:type:subscriber:
+  active:1:events:0:name:socket_events:publisher:audit:refreshes:0:subscriptions:1:type:subscriber:
+  active:1:events:0:name:syslog_events:publisher:syslog:refreshes:0:subscriptions:1:type:subscriber:
+  active:1:events:0:name:user_events:publisher:audit:refreshes:0:subscriptions:1:type:subscriber:
+  active:1:events:0:name:yara_events:publisher:inotify:refreshes:0:subscriptions:0:type:subscriber
+

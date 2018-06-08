@@ -1,0 +1,7 @@
+
+  feature:vmx:input_eax:1:output_bit:5:output_register:ecx:value:0:
+  feature:vendor:input_eax:0:output_bit:0:output_register:ebx:edx:ecx:value:GenuineIntel:
+  feature:sse4.2:input_eax:1:output_bit:20:output_register:ecx:value:1:
+  feature:sse4.1:input_eax:1:output_bit:19:output_register:ecx:value:1:
+  feature:sse2:input_eax:1:output_bit:26:output_register:edx:value:1
+

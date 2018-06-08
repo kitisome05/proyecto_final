@@ -1,0 +1,4 @@
+[
+  {"collisions":"0","flags":"65609","ibytes":"2912338","idrops":"0","ierrors":"0","interface":"lo","ipackets":"16693","last_change":"-1","mac":"00:00:00:00:00:00","metric":"0","mtu":"65536","obytes":"2912338","odrops":"0","oerrors":"0","opackets":"16693","type":"4"},
+  {"collisions":"0","flags":"69699","ibytes":"16091915","idrops":"0","ierrors":"0","interface":"enp0s3","ipackets":"44469","last_change":"-1","mac":"08:00:27:0a:f8:ff","metric":"0","mtu":"1500","obytes":"7566716","odrops":"0","oerrors":"0","opackets":"41888","type":"1"}
+]

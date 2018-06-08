@@ -1,0 +1,22 @@
+
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17621:max:99999:min:0:password_status:locked:username:root:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:daemon:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:bin:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:sys:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:sync:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:games:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:man:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:lp:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:mail:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:news:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:uucp:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:proxy:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:www-data:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:backup:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:list:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:irc:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:gnats:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:nobody:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:systemd-timesync:warning:7:
+  expire:-1:flag:##:hash_alg:##:inactive:-1:last_change:17590:max:99999:min:0:password_status:locked:username:systemd-network:warning:7
+

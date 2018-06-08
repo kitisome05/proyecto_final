@@ -1,0 +1,32 @@
+
+  end:0x00000fff :name:reserved:start:0x00000000:
+  end:0x0009fbff :name:System RAM:start:0x00001000:
+  end:0x0009ffff :name:reserved:start:0x0009fc00:
+  end:0x000bffff :name:PCI Bus 0000:00:start:0x000a0000:
+  end:0x000c7fff :name:Video ROM:start:0x000c0000:
+  end:0x000ef3ff :name:Adapter ROM:start:0x000e2000:
+  end:0x000fffff :name:reserved:start:0x000f0000:
+  end:0x000fffff :name:System ROM:start:0x000f0000:
+  end:0xdffeffff :name:System RAM:start:0x00100000:
+  end:0x01854bc0 :name:Kernel code:start:0x01000000:
+  end:0x01f4747f :name:Kernel data:start:0x01854bc1:
+  end:0x02213fff :name:Kernel bss:start:0x020cb000:
+  end:0xdfffffff :name:ACPI Tables:start:0xdfff0000:
+  end:0xffdfffff :name:PCI Bus 0000:00:start:0xe0000000:
+  end:0xe0ffffff :name:0000:00:02.0:start:0xe0000000:
+  end:0xf001ffff :name:0000:00:03.0:start:0xf0000000:
+  end:0xf001ffff :name:e1000:start:0xf0000000:
+  end:0xf07fffff :name:0000:00:04.0:start:0xf0400000:
+  end:0xf07fffff :name:vboxguest:start:0xf0400000:
+  end:0xf0803fff :name:0000:00:04.0:start:0xf0800000:
+  end:0xf0804fff :name:0000:00:06.0:start:0xf0804000:
+  end:0xf0804fff :name:ohci_hcd:start:0xf0804000:
+  end:0xf0807fff :name:0000:00:0d.0:start:0xf0806000:
+  end:0xf0807fff :name:ahci:start:0xf0806000:
+  end:0xfec00fff :name:reserved:start:0xfec00000:
+  end:0xfec003ff :name:IOAPIC 0:start:0xfec00000:
+  end:0xfee00fff :name:Local APIC:start:0xfee00000:
+  end:0xfee00fff :name:reserved:start:0xfee00000:
+  end:0xffffffff :name:reserved:start:0xfffc0000:
+  end:0x11fffffff :name:System RAM:start:0x100000000
+

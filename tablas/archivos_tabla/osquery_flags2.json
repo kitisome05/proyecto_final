@@ -1,0 +1,22 @@
+
+  default_value:4:description:Seconds to wait for a graceful shutdown:name:alarm_timeout:shell_only:0:type:uint64:value:4:
+  default_value:false:description:Allow unsafe executable permissions:name:allow_unsafe:shell_only:0:type:bool:value:false:
+  default_value:false:description:Allow the audit publisher to change auditing configuration:name:audit_allow_config:shell_only:0:type:bool:value:true:
+  default_value:false:description:Allow the audit publisher to install socket-related rules:name:audit_allow_sockets:shell_only:0:type:bool:value:true:
+  default_value:false:description:Allow socket events to collect domain sockets:name:audit_allow_unix:shell_only:0:type:bool:value:false:
+  default_value:false:description:Debug Linux audit messages:name:audit_debug:shell_only:0:type:bool:value:false:
+  default_value:true:description:Attempt to retain control of audit:name:audit_persist:shell_only:0:type:bool:value:true:
+  default_value:32768:description:Size of the userland queue:name:audit_queue_size:shell_only:0:type:uint64:value:32768:
+  default_value:\/usr\/share\/osquery\/lenses:description:Directory that contains augeas lenses files:name:augeas_lenses:shell_only:0:type:string:value:\/usr\/share\/osquery\/lenses:
+  default_value:##:description:AWS access key ID:name:aws_access_key_id:shell_only:0:type:string:value:##:
+  default_value:10:description:Seconds between flushing logs to Firehose (default 10):name:aws_firehose_period:shell_only:0:type:uint64:value:10:
+  default_value:##:description:Name of Firehose stream for logging:name:aws_firehose_stream:shell_only:0:type:string:value:##:
+  default_value:10:description:Seconds between flushing logs to Kinesis (default 10):name:aws_kinesis_period:shell_only:0:type:uint64:value:10:
+  default_value:false:description:Enable random kinesis partition keys:name:aws_kinesis_random_partition_key:shell_only:0:type:bool:value:false:
+  default_value:##:description:Name of Kinesis stream for logging:name:aws_kinesis_stream:shell_only:0:type:string:value:##:
+  default_value:##:description:AWS profile for authentication and region configuration:name:aws_profile_name:shell_only:0:type:string:value:##:
+  default_value:##:description:AWS region:name:aws_region:shell_only:0:type:string:value:##:
+  default_value:##:description:AWS secret access key:name:aws_secret_access_key:shell_only:0:type:string:value:##:
+  default_value:##:description:AWS STS ARN role:name:aws_sts_arn_role:shell_only:0:type:string:value:##:
+  default_value:##:description:AWS STS region:name:aws_sts_region:shell_only:0:type:string:value:##
+

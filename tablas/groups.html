@@ -1,0 +1,91 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  gid');
+data.addColumn('string','gid_signed');
+data.addColumn('string','groupname');
+data.addRows([
+['0','0','root',],
+['1','1','daemon',],
+['2','2','bin',],
+['3','3','sys',],
+['4','4','adm',],
+['5','5','tty',],
+['6','6','disk',],
+['7','7','lp',],
+['8','8','mail',],
+['9','9','news',],
+['10','10','uucp',],
+['12','12','man',],
+['13','13','proxy',],
+['15','15','kmem',],
+['20','20','dialout',],
+['21','21','fax',],
+['22','22','voice',],
+['24','24','cdrom',],
+['25','25','floppy',],
+['26','26','tape',],
+['27','27','sudo',],
+['29','29','audio',],
+['30','30','dip',],
+['33','33','www-data',],
+['34','34','backup',],
+['37','37','operator',],
+['38','38','list',],
+['39','39','irc',],
+['40','40','src',],
+['41','41','gnats',],
+['42','42','shadow',],
+['43','43','utmp',],
+['44','44','video',],
+['45','45','sasl',],
+['46','46','plugdev',],
+['50','50','staff',],
+['60','60','games',],
+['100','100','users',],
+['65534','65534','nogroup',],
+['101','101','systemd-journal',],
+['102','102','systemd-timesync',],
+['103','103','systemd-network',],
+['104','104','systemd-resolve',],
+['105','105','systemd-bus-proxy',],
+['106','106','input',],
+['107','107','crontab',],
+['108','108','syslog',],
+['109','109','netdev',],
+['110','110','lxd',],
+['111','111','messagebus',],
+['112','112','uuidd',],
+['113','113','mlocate',],
+['114','114','ssh',],
+['1000','1000','edu',],
+['115','115','lpadmin',],
+['116','116','sambashare',],
+['117','117','ssl-cert',],
+['118','118','lightdm',],
+['119','119','nopasswdlogin',],
+['120','120','whoopsie',],
+['121','121','avahi-autoipd',],
+['122','122','avahi',],
+['123','123','bluetooth',],
+['124','124','scanner',],
+['125','125','colord',],
+['126','126','pulse',],
+['127','127','pulse-access',],
+['128','128','rtkit',],
+['129','129','saned ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

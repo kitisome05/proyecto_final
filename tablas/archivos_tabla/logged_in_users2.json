@@ -1,0 +1,6 @@
+
+  host:4.4.0-116-generic:pid:0:time:1528442236:tty:~:type:boot_time:user:reboot:
+  host:4.4.0-116-generic:pid:53:time:1528442264:tty:~:type:runlevel:user:runlevel:
+  host:##:pid:1387:time:1528442267:tty:tty1:type:login:user:LOGIN:
+  host::0:pid:2084:time:1528442282:tty:tty7:type:user:user:edu
+

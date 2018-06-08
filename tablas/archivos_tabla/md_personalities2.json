@@ -1,0 +1,10 @@
+
+  name:linear:
+  name:multipath:
+  name:raid0:
+  name:raid1:
+  name:raid6:
+  name:raid5:
+  name:raid4:
+  name:raid10
+

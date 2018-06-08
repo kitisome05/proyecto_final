@@ -1,0 +1,8 @@
+
+  name:sshd:pid:1251:port:22:
+  name:Brackets-node:pid:3269:port:8123:
+  name:cups-browsed:pid:3509:port:631:
+  name:avahi-daemon:pid:1016:port:42161:
+  name:avahi-daemon:pid:1016:port:5353:
+  name:dhclient:pid:1160:port:68
+

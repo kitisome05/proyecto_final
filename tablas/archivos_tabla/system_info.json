@@ -1,0 +1,3 @@
+[
+  {"computer_name":"edu","cpu_brand":"Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz","cpu_logical_cores":"4","cpu_physical_cores":"4","cpu_subtype":"60","cpu_type":"6","hardware_model":"VirtualBox","hardware_serial":"0","hardware_vendor":"innotek GmbH","hardware_version":"1.2","hostname":"edu","local_hostname":"edu","physical_memory":"4143222784","uuid":"13099865-AE5C-4184-AFCC-789A3465B585"}
+]

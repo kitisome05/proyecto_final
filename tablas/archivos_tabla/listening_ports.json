@@ -1,0 +1,17 @@
+[
+  {"address":"0.0.0.0","family":"2","pid":"1251","port":"22","protocol":"6"},
+  {"address":"127.0.0.1","family":"2","pid":"3506","port":"631","protocol":"6"},
+  {"address":"0.0.0.0","family":"2","pid":"3269","port":"8123","protocol":"6"},
+  {"address":"127.0.0.1","family":"2","pid":"3269","port":"42536","protocol":"6"},
+  {"address":"127.0.0.1","family":"2","pid":"3267","port":"9234","protocol":"6"},
+  {"address":"::","family":"10","pid":"1251","port":"22","protocol":"6"},
+  {"address":"::1","family":"10","pid":"3506","port":"631","protocol":"6"},
+  {"address":"::","family":"10","pid":"5269","port":"80","protocol":"6"},
+  {"address":"0.0.0.0","family":"2","pid":"3509","port":"631","protocol":"17"},
+  {"address":"0.0.0.0","family":"2","pid":"1016","port":"42161","protocol":"17"},
+  {"address":"0.0.0.0","family":"2","pid":"1016","port":"5353","protocol":"17"},
+  {"address":"0.0.0.0","family":"2","pid":"1160","port":"68","protocol":"17"},
+  {"address":"::","family":"10","pid":"1016","port":"42104","protocol":"17"},
+  {"address":"::","family":"10","pid":"1016","port":"5353","protocol":"17"},
+  {"address":"","family":"1","pid":"2073","port":"0","protocol":"0"}
+]

@@ -1,0 +1,6 @@
+[
+  {"address":"127.0.0.1","broadcast":"","interface":"lo","mask":"255.0.0.0","point_to_point":"127.0.0.1","type":""},
+  {"address":"192.168.1.165","broadcast":"192.168.1.255","interface":"enp0s3","mask":"255.255.255.0","point_to_point":"","type":""},
+  {"address":"::1","broadcast":"","interface":"lo","mask":"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff","point_to_point":"","type":""},
+  {"address":"fe80::a00:27ff:fe0a:f8ff","broadcast":"","interface":"enp0s3","mask":"ffff:ffff:ffff:ffff::","point_to_point":"","type":""}
+]

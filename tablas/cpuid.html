@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  feature');
+data.addColumn('string','input_eax');
+data.addColumn('string','output_bit');
+data.addColumn('string','output_register');
+data.addColumn('string','value');
+data.addRows([
+['vmx','1','5','ecx','0',],
+['sse4.2','1','20','ecx','1',],
+['sse4.1','1','19','ecx','1',],
+['sse2','1','26','edx','1 ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

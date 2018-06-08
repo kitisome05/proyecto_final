@@ -1,0 +1,12 @@
+[
+  {"atime":"1528442261","attached":"2","creator_pid":"1271","creator_uid":"0","ctime":"1528442261","dtime":"1528442261","locked":"0","owner_uid":"0","permissions":"0644","pid":"1279","shmid":"0","size":"80","status":""},
+  {"atime":"1528442261","attached":"2","creator_pid":"1271","creator_uid":"0","ctime":"1528442261","dtime":"1528442261","locked":"0","owner_uid":"0","permissions":"0644","pid":"1279","shmid":"32769","size":"16384","status":""},
+  {"atime":"1528442261","attached":"2","creator_pid":"1271","creator_uid":"0","ctime":"1528442261","dtime":"1528442261","locked":"0","owner_uid":"0","permissions":"0644","pid":"1279","shmid":"65538","size":"280","status":""},
+  {"atime":"1528442363","attached":"2","creator_pid":"2259","creator_uid":"1000","ctime":"1528442282","dtime":"1528442363","locked":"0","owner_uid":"1000","permissions":"1600","pid":"3077","shmid":"393219","size":"524288","status":"dest"},
+  {"atime":"1528474820","attached":"2","creator_pid":"2547","creator_uid":"1000","ctime":"1528442287","dtime":"1528474821","locked":"0","owner_uid":"1000","permissions":"0600","pid":"10062","shmid":"950276","size":"16777216","status":""},
+  {"atime":"1528442363","attached":"2","creator_pid":"2401","creator_uid":"1000","ctime":"1528442287","dtime":"1528442363","locked":"0","owner_uid":"1000","permissions":"1600","pid":"3077","shmid":"720901","size":"524288","status":"dest"},
+  {"atime":"1528442502","attached":"2","creator_pid":"2901","creator_uid":"1000","ctime":"1528442343","dtime":"1528442502","locked":"0","owner_uid":"1000","permissions":"1600","pid":"3242","shmid":"1703942","size":"524288","status":"dest"},
+  {"atime":"1528442363","attached":"2","creator_pid":"2596","creator_uid":"1000","ctime":"1528442287","dtime":"1528442363","locked":"0","owner_uid":"1000","permissions":"1600","pid":"3077","shmid":"1048583","size":"524288","status":"dest"},
+  {"atime":"1528475202","attached":"2","creator_pid":"2592","creator_uid":"1000","ctime":"1528442288","dtime":"1528475202","locked":"0","owner_uid":"1000","permissions":"1600","pid":"10829","shmid":"1146888","size":"524288","status":"dest"},
+  {"atime":"1528475202","attached":"2","creator_pid":"2592","creator_uid":"1000","ctime":"1528442290","dtime":"1528475202","locked":"0","owner_uid":"1000","permissions":"1600","pid":"10829","shmid":"1277961","size":"33554432","status":"dest"}
+]

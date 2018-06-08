@@ -1,0 +1,7 @@
+[
+  {"address":"127.0.0.1","hostnames":"localhost"},
+  {"address":"127.0.1.1","hostnames":"edu"},
+  {"address":"::1","hostnames":"localhost ip6-localhost ip6-loopback"},
+  {"address":"ff02::1","hostnames":"ip6-allnodes"},
+  {"address":"ff02::2","hostnames":"ip6-allrouters"}
+]

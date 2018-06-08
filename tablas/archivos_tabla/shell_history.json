@@ -1,0 +1,12 @@
+[
+  {"command":"osqueryi --json \"select * from interface_addresses;\"","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"clear","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"osqueryi --json \"select * from interface_details;\"","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"clear","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"osqueryi --json \"select * from iptables;\"","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"celar","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"clear","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"osqueryi --json \"select * from kernel_info;\"","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"clear","history_file":"\/root\/.bash_history","time":"","uid":"0"},
+  {"command":"osqueryi --json \"select * from kernel_integrity;\"","history_file":"\/root\/.bash_history","time":"","uid":"0"}
+]

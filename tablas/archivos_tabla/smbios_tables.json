@@ -1,0 +1,12 @@
+[
+  {"description":"BIOS Information","handle":"0","header_size":"20","md5":"0527544e631671fc38436d5225ffb90c","number":"0","size":"56","type":"0"},
+  {"description":"System Information","handle":"1","header_size":"27","md5":"e4e4431659abde77023b60c336230efb","number":"1","size":"74","type":"1"},
+  {"description":"Base Board or Module Information","handle":"8","header_size":"15","md5":"bc3f8813ccf4cc5c7b7cdc14258ebc05","number":"2","size":"52","type":"2"},
+  {"description":"System Enclosure or Chassis","handle":"3","header_size":"13","md5":"86699197dae907842d783d7765456dd8","number":"3","size":"33","type":"3"},
+  {"description":"Inactive","handle":"7","header_size":"42","md5":"879cc1ff18b3508ed5209d21e3d0f5d8","number":"4","size":"81","type":"126"},
+  {"description":"Inactive","handle":"5","header_size":"15","md5":"5a3b81c5d8614ef7f8d0261ee6fb27b6","number":"5","size":"17","type":"126"},
+  {"description":"Inactive","handle":"6","header_size":"28","md5":"87d0d4a2de679904a2015757b15e9810","number":"6","size":"83","type":"126"},
+  {"description":"OEM Strings","handle":"2","header_size":"7","md5":"a65db715c120f4cd60c9b56a1a783146","number":"7","size":"38","type":"11"},
+  {"description":"Unknown","handle":"8","header_size":"8","md5":"4409c1130fe507b1b34c0e57a9d9273c","number":"8","size":"10","type":"128"},
+  {"description":"End-of-Table","handle":"65279","header_size":"4","md5":"a6b53027f966a1216db1642a3482c8b8","number":"9","size":"4","type":"127"}
+]
