@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  host');
+data.addColumn('string','0');
+data.addColumn('string','2425');
+data.addColumn('string','1528192245');
+data.addColumn('string','tty7');
+data.addColumn('string','7');
+data.addRows([
+['','pid','time','tty','type','username',],
+['##','1388','1528235247','tty1','8','##',],
+['4.4.0-116-generic','0','1528235249','~','1','shutdown',],
+['4.4.0-116-generic','0','1528279017','~','2','reboot',],
+['4.4.0-116-generic','53','1528279043','~','1','runlevel',],
+['##','1382','1528279046','tty1','5','##',],
+['##','1382','1528279046','tty1','6','LOGIN',],
+['','pid','time','tty','type','username',],
+['##','1382','1528282942','tty1','8','##',],
+['4.4.0-116-generic','0','1528282944','~','1','shutdown',],
+['4.4.0-116-generic','0','1528282957','~','2','reboot',],
+['4.4.0-116-generic','53','1528282983','~','1','runlevel',],
+['##','1376','1528282983','tty1','5','##',],
+['##','1376','1528282983','tty1','6','LOGIN',],
+['','pid','time','tty','type','username',],
+['##','1376','1528292011','tty1','8','##',],
+['4.4.0-116-generic','0','1528351299','~','2','reboot',],
+['4.4.0-116-generic','53','1528351324','~','1','runlevel',],
+['##','1377','1528351328','tty1','5','##',],
+['##','1377','1528351328','tty1','6','LOGIN',],
+['','pid','time','tty','type','username',],
+['##','1377','1528395793','tty1','8','##',],
+['4.4.0-116-generic','0','1528395795','~','1','shutdown',],
+['4.4.0-116-generic','0','1528442236','~','2','reboot',],
+['4.4.0-116-generic','53','1528442264','~','1','runlevel',],
+['##','1387','1528442267','tty1','5','##',],
+['##','1387','1528442267','tty1','6','LOGIN',],
+['','pid','time','tty','type','username',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

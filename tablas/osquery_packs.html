@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  active');
+data.addColumn('string','discovery_cache_hits');
+data.addColumn('string','discovery_executions');
+data.addColumn('string','name');
+data.addColumn('string','platform');
+data.addColumn('string','shard');
+data.addColumn('string','version');
+data.addRows([
+['1','1','1','main','##','0','##',],
+['1','1','1','fim','##','0','##',],
+['1','1','1','osquery-monitoring','##','0','##',],
+['1','1','1','incident-response','##','0','##',],
+['1','1','1','it-compliance','##','0','##',],
+['1','1','1','vuln-management','##','0','## ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

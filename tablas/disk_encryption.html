@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  encrypted');
+data.addColumn('string','name');
+data.addColumn('string','type');
+data.addColumn('string','uid');
+data.addColumn('string','user_uuid');
+data.addColumn('string','uuid');
+data.addRows([
+['0','\/dev\/dm-1','##','##','##','cc20cb61-14fc-4547-9fc8-f32d82420206',],
+['0','\/dev\/dm-0','##','##','##','4f4d57bb-0a38-4bc6-beb9-3d9a0b6b97eb',],
+['0','\/dev\/sda1','##','##','##','380e8a6f-7649-49e5-ab0e-15341f3934f2',],
+['0','\/dev\/sda5','##','##','##','0HVkLo-gWFU-xO72-2tTU-BKtR-2VUx-otIbYl ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

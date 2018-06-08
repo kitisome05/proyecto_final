@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  command');
+data.addColumn('string','history_file');
+data.addColumn('string','time');
+data.addColumn('string','uid');
+data.addRows([
+['osqueryi --json \select * from interface_addresses;\##','\/root\/.bash_history','##','0',],
+['clear','\/root\/.bash_history','##','0',],
+['osqueryi --json \select * from interface_details;\##','\/root\/.bash_history','##','0',],
+['clear','\/root\/.bash_history','##','0',],
+['osqueryi --json \select * from iptables;\##','\/root\/.bash_history','##','0',],
+['celar','\/root\/.bash_history','##','0',],
+['clear','\/root\/.bash_history','##','0',],
+['osqueryi --json \select * from kernel_info;\##','\/root\/.bash_history','##','0',],
+['clear','\/root\/.bash_history','##','0',],
+['osqueryi --json \select * from kernel_integrity;\##','\/root\/.bash_history','##','0 ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

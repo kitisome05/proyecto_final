@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  active');
+data.addColumn('string','buffers');
+data.addColumn('string','cached');
+data.addColumn('string','inactive');
+data.addColumn('string','memory_free');
+data.addColumn('string','memory_total');
+data.addColumn('string','swap_cached');
+data.addColumn('string','swap_free');
+data.addRows([
+['2464616448','104546304','1129009152','678719488','754012160','4143222784','0','1023406080',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  default_value');
+data.addColumn('string','description');
+data.addColumn('string','name');
+data.addColumn('string','shell_only');
+data.addColumn('string','type');
+data.addColumn('string','value');
+data.addRows([
+['4','Seconds to wait for a graceful shutdown','alarm_timeout','0','uint64','4',],
+['false','Allow unsafe executable permissions','allow_unsafe','0','bool','false',],
+['false','Allow the audit publisher to change auditing configuration','audit_allow_config','0','bool','true',],
+['false','Allow the audit publisher to install socket-related rules','audit_allow_sockets','0','bool','true',],
+['false','Allow socket events to collect domain sockets','audit_allow_unix','0','bool','false',],
+['false','Debug Linux audit messages','audit_debug','0','bool','false',],
+['true','Attempt to retain control of audit','audit_persist','0','bool','true',],
+['32768','Size of the userland queue','audit_queue_size','0','uint64','32768',],
+['\/usr\/share\/osquery\/lenses','Directory that contains augeas lenses files','augeas_lenses','0','string','\/usr\/share\/osquery\/lenses',],
+['##','AWS access key ID','aws_access_key_id','0','string','##',],
+['10','Seconds between flushing logs to Firehose (default 10)','aws_firehose_period','0','uint64','10',],
+['##','Name of Firehose stream for logging','aws_firehose_stream','0','string','##',],
+['10','Seconds between flushing logs to Kinesis (default 10)','aws_kinesis_period','0','uint64','10',],
+['false','Enable random kinesis partition keys','aws_kinesis_random_partition_key','0','bool','false',],
+['##','Name of Kinesis stream for logging','aws_kinesis_stream','0','string','##',],
+['##','AWS profile for authentication and region configuration','aws_profile_name','0','string','##',],
+['##','AWS region','aws_region','0','string','##',],
+['##','AWS secret access key','aws_secret_access_key','0','string','##',],
+['##','AWS STS ARN role','aws_sts_arn_role','0','string','##',],
+['##','AWS STS region','aws_sts_region','0','string','## ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

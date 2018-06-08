@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  build_distro');
+data.addColumn('string','build_platform');
+data.addColumn('string','config_hash');
+data.addColumn('string','config_valid');
+data.addColumn('string','extensions');
+data.addColumn('string','instance_id');
+data.addColumn('string','pid');
+data.addColumn('string','start_time');
+data.addColumn('string','uuid');
+data.addColumn('string','version');
+data.addRows([
+['xenial','ubuntu','5ff4ba8452939e9779bffff6a9798b171af0a706','1','inactive','49c4ae5e-14e6-4962-88f1-81e6765ee065','10951','1528475517','13099865-AE5C-4184-AFCC-789A3465B585','2.11.0',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

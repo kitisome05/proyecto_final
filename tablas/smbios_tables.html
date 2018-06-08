@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  description');
+data.addColumn('string','handle');
+data.addColumn('string','header_size');
+data.addColumn('string','md5');
+data.addColumn('string','number');
+data.addColumn('string','size');
+data.addColumn('string','type');
+data.addRows([
+['BIOS Information','0','20','0527544e631671fc38436d5225ffb90c','0','56','0',],
+['System Information','1','27','e4e4431659abde77023b60c336230efb','1','74','1',],
+['Base Board or Module Information','8','15','bc3f8813ccf4cc5c7b7cdc14258ebc05','2','52','2',],
+['System Enclosure or Chassis','3','13','86699197dae907842d783d7765456dd8','3','33','3',],
+['Inactive','7','42','879cc1ff18b3508ed5209d21e3d0f5d8','4','81','126',],
+['Inactive','5','15','5a3b81c5d8614ef7f8d0261ee6fb27b6','5','17','126',],
+['Inactive','6','28','87d0d4a2de679904a2015757b15e9810','6','83','126',],
+['OEM Strings','2','7','a65db715c120f4cd60c9b56a1a783146','7','38','11',],
+['Unknown','8','8','4409c1130fe507b1b34c0e57a9d9273c','8','10','128',],
+['End-of-Table','65279','4','a6b53027f966a1216db1642a3482c8b8','9','4','127 ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

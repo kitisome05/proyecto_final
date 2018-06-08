@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  active');
+data.addColumn('string','autoupdate');
+data.addColumn('string','creator');
+data.addColumn('string','description');
+data.addColumn('string','disabled');
+data.addColumn('string','identifier');
+data.addColumn('string','location');
+data.addColumn('string','name');
+data.addColumn('string','native');
+data.addColumn('string','path');
+data.addColumn('string','source_url');
+data.addColumn('string','type');
+data.addColumn('string','uid');
+data.addColumn('string','version');
+data.addColumn('string','visible');
+data.addRows([
+['1','1','null','A rich visual history feed and a reimagined home page make it easier than ever to find exactly what you're looking for in Firefox.','0','activity-stream@mozilla.org','app-system-defaults','Activity Stream','0','##','null','extension','0','2018.02.17.0026-173e2795','1',],
+['1','1','null','Sets value(s) in the update url based on custom checks.','0','aushelper@mozilla.org','app-system-defaults','Application Update Service Helper','0','##','null','extension','0','2.0','1',],
+['1','1','null','When you find something you want to view later','disabled','identifier','location','name','native','path','source_url','type','uid','version','visible',],
+['1','1','null','null','0','followonsearch@mozilla.com','app-system-defaults','Follow-on Search Telemetry','0','##','null','extension','0','0.9.6','1',],
+['1','1','null','Autofill forms with saved profiles','0','formautofill@mozilla.org','app-system-defaults','Form Autofill','0','##','null','extension','0','1.0','1',],
+['1','1','null','Photon onboarding','0','onboarding@mozilla.org','app-system-defaults','Photon onboarding','0','##','null','extension','0','1.0','1',],
+['1','1','null','null','0','screenshots@mozilla.org','app-system-defaults','Firefox Screenshots','0','##','null','extension','0','25.0.0','1',],
+['1','1','null','Urgent post-release fixes for web compatibility.','0','webcompat@mozilla.org','app-system-defaults','Web Compat','0','##','null','extension','0','1.1','1',],
+['1','1','Mozilla','The default theme.','0','972ce4c6-7e08-4474-a285-3208198ce6fd','app-global','Default','0','##','null','theme','0','59.0.2','1 ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

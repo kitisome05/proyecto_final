@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  computer_name');
+data.addColumn('string','cpu_brand');
+data.addColumn('string','cpu_logical_cores');
+data.addColumn('string','cpu_physical_cores');
+data.addColumn('string','cpu_subtype');
+data.addColumn('string','cpu_type');
+data.addColumn('string','hardware_model');
+data.addColumn('string','hardware_serial');
+data.addColumn('string','hardware_vendor');
+data.addColumn('string','hardware_version');
+data.addColumn('string','hostname');
+data.addColumn('string','local_hostname');
+data.addColumn('string','physical_memory');
+data.addRows([
+['edu','Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz','4','4','60','6','VirtualBox','0','innotek GmbH','1.2','edu','edu','4143222784',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

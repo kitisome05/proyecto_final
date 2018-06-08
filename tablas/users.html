@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  description');
+data.addColumn('string','directory');
+data.addColumn('string','gid');
+data.addColumn('string','gid_signed');
+data.addColumn('string','shell');
+data.addColumn('string','uid');
+data.addColumn('string','uid_signed');
+data.addColumn('string','username');
+data.addColumn('string','uuid');
+data.addRows([
+['root','\/root','0','0','\/bin\/bash','0','0','root','##',],
+['daemon','\/usr\/sbin','1','1','\/usr\/sbin\/nologin','1','1','daemon','##',],
+['bin','\/bin','2','2','\/usr\/sbin\/nologin','2','2','bin','##',],
+['sys','\/dev','3','3','\/usr\/sbin\/nologin','3','3','sys','##',],
+['sync','\/bin','65534','65534','\/bin\/sync','4','4','sync','##',],
+['games','\/usr\/games','60','60','\/usr\/sbin\/nologin','5','5','games','##',],
+['man','\/var\/cache\/man','12','12','\/usr\/sbin\/nologin','6','6','man','##',],
+['lp','\/var\/spool\/lpd','7','7','\/usr\/sbin\/nologin','7','7','lp','##',],
+['mail','\/var\/mail','8','8','\/usr\/sbin\/nologin','8','8','mail','##',],
+['news','\/var\/spool\/news','9','9','\/usr\/sbin\/nologin','9','9','news','##',],
+['uucp','\/var\/spool\/uucp','10','10','\/usr\/sbin\/nologin','10','10','uucp','##',],
+['proxy','\/bin','13','13','\/usr\/sbin\/nologin','13','13','proxy','##',],
+['www-data','\/var\/www','33','33','\/usr\/sbin\/nologin','33','33','www-data','##',],
+['backup','\/var\/backups','34','34','\/usr\/sbin\/nologin','34','34','backup','##',],
+['Mailing List Manager','\/var\/list','38','38','\/usr\/sbin\/nologin','38','38','list','##',],
+['ircd','\/var\/run\/ircd','39','39','\/usr\/sbin\/nologin','39','39','irc','##',],
+['Gnats Bug-Reporting System (admin)','\/var\/lib\/gnats','41','41','\/usr\/sbin\/nologin','41','41','gnats','##',],
+['nobody','\/nonexistent','65534','65534','\/usr\/sbin\/nologin','65534','65534','nobody','##',],
+['##','\/home\/syslog','108','108','\/bin\/false','104','104','syslog','##',],
+['##','\/nonexistent','65534','65534','\/bin\/false','105','105','_apt','##',],
+['##','\/var\/lib\/lxd\/','65534','65534','\/bin\/false','106','106','lxd','##',],
+['##','\/var\/run\/dbus','111','111','\/bin\/false','107','107','messagebus','##',],
+['##','\/run\/uuidd','112','112','\/bin\/false','108','108','uuidd','##',],
+['Light Display Manager','\/var\/lib\/lightdm','118','118','\/bin\/false','110','110','lightdm','##',],
+['##','\/nonexistent','120','120','\/bin\/false','111','111','whoopsie','##',],
+['##','\/var\/lib\/saned','129','129','\/bin\/false','120','120','saned','##',],
+['##','\/var\/run\/sshd','65534','65534','\/usr\/sbin\/nologin','122','122','sshd','## ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

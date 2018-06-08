@@ -1,0 +1,61 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  groupname');
+data.addColumn('string','path');
+data.addColumn('string','permissions');
+data.addColumn('string','username');
+data.addRows([
+['root','\/bin\/ping6','S','root',],
+['root','\/bin\/mount','S','root',],
+['root','\/bin\/umount','S','root',],
+['root','\/bin\/ping','S','root',],
+['root','\/bin\/fusermount','S','root',],
+['root','\/bin\/su','S','root',],
+['root','\/bin\/ntfs-3g','S','root',],
+['root','\/sbin\/mount.ntfs','S','root',],
+['shadow','\/sbin\/pam_extrausers_chkpwd','G','root',],
+['root','\/sbin\/mount.ntfs-3g','S','root',],
+['shadow','\/sbin\/unix_chkpwd','G','root',],
+['root','\/usr\/bin\/gpasswd','S','root',],
+['mlocate','\/usr\/bin\/mlocate','G','root',],
+['tty','\/usr\/bin\/bsd-write','G','root',],
+['ssh','\/usr\/bin\/ssh-agent','G','root',],
+['root','\/usr\/bin\/newuidmap','S','root',],
+['shadow','\/usr\/bin\/chage','G','root',],
+['root','\/usr\/bin\/pkexec','S','root',],
+['daemon','\/usr\/bin\/atrm','SG','daemon',],
+['shadow','\/usr\/bin\/expiry','G','root',],
+['root','\/usr\/bin\/newgrp','S','root',],
+['root','\/usr\/bin\/chfn','S','root',],
+['root','\/usr\/bin\/sg','S','root',],
+['root','\/usr\/bin\/chsh','S','root',],
+['crontab','\/usr\/bin\/crontab','G','root',],
+['mlocate','\/usr\/bin\/locate','G','root',],
+['root','\/usr\/bin\/ubuntu-core-launcher','SG','root',],
+['tty','\/usr\/bin\/wall','G','root',],
+['tty','\/usr\/bin\/write','G','root',],
+['root','\/usr\/bin\/passwd','S','root',],
+['root','\/usr\/bin\/sudo','S','root',],
+['utmp','\/usr\/bin\/xvt','G','root',],
+['root','\/usr\/bin\/newgidmap','S','root',],
+['daemon','\/usr\/bin\/at','SG','daemon',],
+['root','\/usr\/bin\/sudoedit','S','root',],
+['daemon','\/usr\/bin\/atq','SG','daemon',],
+['utmp','\/usr\/bin\/screen','G','root',],
+['dip','\/usr\/sbin\/pppd','S','root ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

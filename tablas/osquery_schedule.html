@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  average_memory');
+data.addColumn('string','blacklisted');
+data.addColumn('string','executions');
+data.addColumn('string','interval');
+data.addColumn('string','last_executed');
+data.addColumn('string','name');
+data.addColumn('string','output_size');
+data.addColumn('string','query');
+data.addColumn('string','system_time');
+data.addColumn('string','user_time');
+data.addColumn('string','wall_time');
+data.addRows([
+['0','0','0','300','0','crontab','0','SELECT * FROM crontab;','0','0','0',],
+['0','0','0','3600','0','system_profile','0','SELECT * FROM osquery_schedule;','0','0','0',],
+['0','0','0','300','0','pack_fim_file_events','0','select * from file_events;','0','0','0',],
+['0','0','0','3600','0','pack_incident-response_arp_cache','0','select * from arp_cache;','0','0','0',],
+['0','0','0','3600','0','pack_incident-response_crontab','0','select * from crontab;','0','0','0',],
+['0','0','0','86400','0','pack_incident-response_disk_encryption','0','select * from disk_encryption;','0','0','0',],
+['0','0','0','86400','0','pack_incident-response_etc_hosts','0','select * from etc_hosts;','0','0','0',],
+['0','0','0','3600','0','pack_incident-response_ip_forwarding','0','select * from system_controls where oid = '4.30.41.1' union select * from system_controls where oid = '4.2.0.1';','0','0','0',],
+['0','0','0','3600','0','pack_incident-response_iptables','0','select * from iptables;','0','0','0',],
+['0','0','0','3600','0','pack_incident-response_kernel_modules','0','select * from kernel_modules;','0','0','0',],
+['0','0','0','3600','0','pack_incident-response_last','0','select * from last;','0','0','0 ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

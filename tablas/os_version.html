@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  build');
+data.addColumn('string','codename');
+data.addColumn('string','major');
+data.addColumn('string','minor');
+data.addColumn('string','name');
+data.addColumn('string','patch');
+data.addColumn('string','platform');
+data.addColumn('string','platform_like');
+data.addRows([
+['##','xenial','16','4','Ubuntu','0','ubuntu','debian',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  collisions');
+data.addColumn('string','flags');
+data.addColumn('string','ibytes');
+data.addColumn('string','idrops');
+data.addColumn('string','ierrors');
+data.addColumn('string','interface');
+data.addColumn('string','ipackets');
+data.addColumn('string','last_change');
+data.addColumn('string','mac');
+data.addColumn('string','00');
+data.addColumn('string','00');
+data.addColumn('string','00');
+data.addColumn('string','0');
+data.addColumn('string','65536');
+data.addColumn('string','2912338');
+data.addColumn('string','0');
+data.addColumn('string','0');
+data.addColumn('string','16693');
+data.addRows([
+['0','65609','2912338','0','0','lo','16693','-1','00','00','00','metric','mtu','obytes','odrops','oerrors','opackets','type',],
+['0','69699','16091915','0','0','enp0s3','44469','-1','08','27','f8','metric','mtu','obytes','odrops','oerrors','opackets','type',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

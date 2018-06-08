@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  datetime');
+data.addColumn('string','55');
+data.addColumn('string','day');
+data.addColumn('string','hour');
+data.addColumn('string','iso_8601');
+data.addColumn('string','55');
+data.addColumn('string','local_time');
+data.addColumn('string','local_timezone');
+data.addColumn('string','minutes');
+data.addColumn('string','month');
+data.addColumn('string','seconds');
+data.addColumn('string','timestamp');
+data.addColumn('string','55');
+data.addColumn('string','timezone');
+data.addColumn('string','unix_time');
+data.addColumn('string','weekday');
+data.addRows([
+['2018-06-08T16','49Z','8','16','2018-06-08T16','49Z','1528476949','CEST','55','6','49','Fri Jun  8 16','49 2018 UTC','GMT','1528476949','Friday',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

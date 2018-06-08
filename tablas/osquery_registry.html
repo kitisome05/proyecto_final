@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  active');
+data.addColumn('string','internal');
+data.addColumn('string','name');
+data.addColumn('string','owner_uuid');
+data.addColumn('string','registry');
+data.addRows([
+['1','0','filesystem','0','config',],
+['0','0','tls','0','config',],
+['0','0','update','0','config',],
+['1','1','decorators','0','config_parser',],
+['1','1','events','0','config_parser',],
+['1','1','file_paths','0','config_parser',],
+['1','1','kafka_topics','0','config_parser',],
+['1','1','options','0','config_parser',],
+['1','1','prometheus_targets','0','config_parser',],
+['1','1','views','0','config_parser',],
+['1','0','yara','0','config_parser',],
+['1','1','ephemeral','0','database',],
+['0','1','rocksdb','0','database',],
+['0','1','sqlite','0','database',],
+['1','0','tls','0','distributed ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

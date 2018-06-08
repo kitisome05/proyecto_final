@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  blocks');
+data.addColumn('string','blocks_available');
+data.addColumn('string','blocks_free');
+data.addColumn('string','blocks_size');
+data.addColumn('string','device');
+data.addColumn('string','device_alias');
+data.addColumn('string','flags');
+data.addColumn('string','nosuid');
+data.addColumn('string','noexec');
+data.addColumn('string','inodes');
+data.addColumn('string','inodes_free');
+data.addColumn('string','path');
+data.addColumn('string','type');
+data.addRows([
+['0','0','0','4096','sysfs','sysfs','rw','nodev','relatime','0','0','\/sys','sysfs',],
+['0','0','0','4096','proc','proc','rw','nodev','relatime','0','0','\/proc','proc',],
+['500215','500215','500215','4096','udev','udev','rw','relatime','nr_inodes=500215','inodes','inodes_free','path','type',],
+['101153','95792','95792','4096','tmpfs','tmpfs','rw','noexec','size=404612k','inodes','inodes_free','path','type',],
+['28414116','25613660','27062773','4096','\/dev\/mapper\/edu--vg-root','\/dev\/dm-0','rw','errors=remount-ro','inodes','inodes_free','path','type',' ',],
+['0','0','0','4096','securityfs','securityfs','rw','nodev','relatime','0','0','\/sys\/kernel\/security','securityfs',],
+['1280','1279','1279','4096','tmpfs','tmpfs','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['505764','505764','505764','4096','tmpfs','tmpfs','ro','nodev','mode=755','505764','505748','\/sys\/fs\/cgroup','tmpfs',],
+['0','0','0','4096','pstore','pstore','rw','nodev','relatime','0','0','\/sys\/fs\/pstore','pstore',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['0','0','0','4096','cgroup','cgroup','rw','nodev','relatime','inodes','inodes_free','path','type',],
+['482922','394533','419467','1024','\/dev\/sda1','\/dev\/sda1','rw','block_validity','user_xattr','inodes','inodes_free','path','type',],
+['0','0','0','0','gvfsd-fuse','gvfsd-fuse','rw','nodev','user_id=1000','inodes','inodes_free','path','type',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

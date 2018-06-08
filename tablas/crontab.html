@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  command');
+data.addColumn('string','day_of_month');
+data.addColumn('string','day_of_week');
+data.addColumn('string','event');
+data.addColumn('string','hour');
+data.addColumn('string','minute');
+data.addColumn('string','month');
+data.addColumn('string','path');
+data.addRows([
+['root cd \/ && run-parts --report \/etc\/cron.hourly','*','*','##','*','17','*','\/etc\/crontab',],
+['root test -x \/usr\/sbin\/anacron || ( cd \/ && run-parts --report \/etc\/cron.daily )','*','*','##','6','25','*','\/etc\/crontab',],
+['root test -x \/usr\/sbin\/anacron || ( cd \/ && run-parts --report \/etc\/cron.weekly )','*','7','##','6','47','*','\/etc\/crontab',],
+['root test -x \/usr\/sbin\/anacron || ( cd \/ && run-parts --report \/etc\/cron.monthly )','1','*','##','6','52','*','\/etc\/crontab',],
+['root test -x \/etc\/init.d\/anacron && \/usr\/sbin\/invoke-rc.d anacron start >\/dev\/null','*','*','##','7','30','*','\/etc\/cron.d\/anacron',],
+['root if  -x \/usr\/share\/mdadm\/checkarray  &&  $(date +\\%d) -le 7 ; then \/usr\/share\/mdadm\/checkarray --cron --all --idle --quiet; fi','*','0','##','0','57','*','\/etc\/cron.d\/mdadm',],
+['root  -x \/usr\/lib\/php\/sessionclean  && \/usr\/lib\/php\/sessionclean','*','*','##','*','09','month','path',],
+['root test -x \/etc\/cron.daily\/popularity-contest && \/etc\/cron.daily\/popularity-contest --crond','*','*','##','8','41','*','\/etc\/cron.d\/popularity-contest ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

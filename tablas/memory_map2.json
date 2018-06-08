@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  end');
+data.addColumn('string','name');
+data.addColumn('string','start');
+data.addRows([
+['0x00000fff ','reserved','0x00000000',],
+['0x0009fbff ','System RAM','0x00001000',],
+['0x0009ffff ','reserved','0x0009fc00',],
+['0x000bffff ','PCI Bus 0000','start',],
+['0x000c7fff ','Video ROM','0x000c0000',],
+['0x000ef3ff ','Adapter ROM','0x000e2000',],
+['0x000fffff ','reserved','0x000f0000',],
+['0x000fffff ','System ROM','0x000f0000',],
+['0xdffeffff ','System RAM','0x00100000',],
+['0x01854bc0 ','Kernel code','0x01000000',],
+['0x01f4747f ','Kernel data','0x01854bc1',],
+['0x02213fff ','Kernel bss','0x020cb000',],
+['0xdfffffff ','ACPI Tables','0xdfff0000',],
+['0xffdfffff ','PCI Bus 0000','start',],
+['0xf001ffff ','e1000','0xf0000000',],
+['0xf07fffff ','vboxguest','0xf0400000',],
+['0xf0804fff ','ohci_hcd','0xf0804000',],
+['0xf0807fff ','ahci','0xf0806000',],
+['0xfec00fff ','reserved','0xfec00000',],
+['0xfec003ff ','IOAPIC 0','0xfec00000',],
+['0xfee00fff ','Local APIC','0xfee00000',],
+['0xfee00fff ','reserved','0xfee00000',],
+['0xffffffff ','reserved','0xfffc0000',],
+['0x11fffffff ','System RAM','0x100000000 ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  
