@@ -188,3 +188,32 @@ body {
         font-size: 150px;
     }
   }
+
+#boton {
+    text-decoration: none;
+    padding: 10px;
+    margin: 29px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #a596ff;
+    border-radius: 6px;
+    border: 2px solid #00094c;
+}
+
+#boton:hover {
+   color: #00094c;
+   background-color: #ffffff; 
+}
+
+#fila3 {
+    display: none;
+}
+
+#fila4 {
+    display: none;
+}
+
+#fila5 {
+    display: none;
+}

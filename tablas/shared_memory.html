@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['table']});
+ google.charts.setOnLoadCallback(drawTable); 
+ function drawTable() { 
+ var data = new google.visualization.DataTable(); 
+data.addColumn('string','  atime');
+data.addColumn('string','attached');
+data.addColumn('string','creator_pid');
+data.addColumn('string','creator_uid');
+data.addColumn('string','ctime');
+data.addColumn('string','dtime');
+data.addColumn('string','locked');
+data.addColumn('string','owner_uid');
+data.addColumn('string','permissions');
+data.addColumn('string','pid');
+data.addColumn('string','shmid');
+data.addColumn('string','size');
+data.addColumn('string','status');
+data.addRows([
+['1528442261','2','1271','0','1528442261','1528442261','0','0','0644','1279','0','80','##',],
+['1528442261','2','1271','0','1528442261','1528442261','0','0','0644','1279','32769','16384','##',],
+['1528442261','2','1271','0','1528442261','1528442261','0','0','0644','1279','65538','280','##',],
+['1528442363','2','2259','1000','1528442282','1528442363','0','1000','1600','3077','393219','524288','dest',],
+['1528474820','2','2547','1000','1528442287','1528474821','0','1000','0600','10062','950276','16777216','##',],
+['1528442363','2','2401','1000','1528442287','1528442363','0','1000','1600','3077','720901','524288','dest',],
+['1528442502','2','2901','1000','1528442343','1528442502','0','1000','1600','3242','1703942','524288','dest',],
+['1528442363','2','2596','1000','1528442287','1528442363','0','1000','1600','3077','1048583','524288','dest',],
+['1528475202','2','2592','1000','1528442288','1528475202','0','1000','1600','10829','1146888','524288','dest',],
+['1528475202','2','2592','1000','1528442290','1528475202','0','1000','1600','10829','1277961','33554432','dest ',],
+]);
+ var table = new google.visualization.Table(document.getElementById('table_div')); 
+ table.draw(data, {showRowNumber: true, width: '100%', height: '100%'}); 
+ } 
+ </script> 
+ </head>  
+ <body>  
+ <div id="table_div"></div> 
+ </body> 
+ </html>  

@@ -158,4 +158,5 @@ osqueryi --json "select * from uptime;"
 	#Usuarios
 osqueryi --json "select * from users;" 
 	#Nombre de aplicaciones puerto y pid
-osqueryi --json "select DISTINCT process.name, listening.port, process.pid from processes as process join listening_ports as listening on process.pid = listening.pid where listening.address = '0.0.0.0';" 
+osqueryi --json "select DISTINCT process.name, listening.port, process.pid from processes as 
+process join listening_ports as listening on process.pid = listening.pid where listening.address = '0.0.0.0';" 
